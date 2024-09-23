@@ -17,9 +17,9 @@ function FormContainer({
   children: React.ReactNode;
 }) {
   const [state, formAction] = useFormState(action, initialState);
-  console.log(state);
+
   const { toast } = useToast();
-  console.log(toast);
+
   useEffect(() => {
     if (state.message) {
       toast({
