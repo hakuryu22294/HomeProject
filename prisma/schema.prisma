@@ -18,7 +18,7 @@ model Profile {
   profileImage String
   createAt     DateTime   @default(now())
   updateAt     DateTime   @updatedAt
-  Property     Property[]
+  properties   Property[]
 }
 
 model Property {
@@ -32,6 +32,7 @@ model Property {
   price       Int
   guests      Int
   bedrooms    Int
+  beds        Int
   baths       Int
   amenities   String
   createdAt   DateTime @default(now())
